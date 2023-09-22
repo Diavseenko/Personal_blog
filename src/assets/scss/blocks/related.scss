@@ -1,0 +1,38 @@
+.related{
+	border-bottom: 1px solid #1C1C1C;
+	padding-bottom: 0.5rem;
+}
+
+.related__list{
+	display: flex;
+	flex-wrap: wrap;
+
+	@include breakpoint($mobile-bp){
+		display: block;
+	}
+}
+
+.related__list-item{
+	width: 50%;
+	margin-bottom: 2.4rem;
+
+	@include breakpoint($mobile-bp){
+		width: 100%;
+	}
+}
+.related__list-link{
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	color: #F3EBA2;
+
+	margin-right: 2rem;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.related__list-date{
+	font-size: 12px;
+	font-weight: 400;
+	color: #828282;
+}

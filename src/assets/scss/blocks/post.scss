@@ -1,0 +1,176 @@
+.post{
+	margin-bottom: 3rem;
+	padding: 2.5rem;
+
+	box-shadow: 0 15px 25px rgba($black, 0.35);
+	border-radius: 5px;
+	background-color: $primary;
+	overflow: hidden;
+
+	@include breakpoint($mobile-bp){
+		padding: 1.5rem;
+	}
+}
+
+.post__header{
+	margin: 0 0 2.5rem;
+
+	&--embed{
+		margin: -2.5rem -2.5rem 2.5rem;
+	 }
+}
+
+	.post__header-img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+		border-radius: 5px;
+	}
+
+.post__content{
+	margin-bottom: 2rem;
+}
+
+.post__title{
+	font-size: 18px;
+	font-weight: 500;
+
+	margin-bottom: 2rem;
+
+	&--open{
+		margin-bottom: 0.75rem;
+	}
+	@include breakpoint($mobile-bp){
+		line-height: 1.2;
+	}
+}
+
+.post__subtitle{
+	font-size: 1.6rem;
+	font-weight: 500;
+	color: $white;
+	margin-top: 3rem;
+	margin-bottom: 2rem;
+}
+
+.post__discription{
+	font-size: 1.4rem;
+	color: #D2D2D2;
+}
+
+.post__text{
+	font-size: 1.4rem;
+	color: $white;
+	border-bottom: 1px solid #1C1C1C;
+	padding-bottom: 1rem;
+
+	p{
+		margin-bottom: 2rem;
+	}
+
+	h1, h2, h3, h4, h5, h6{
+		font-weight: 700;
+		margin-bottom: 2rem
+	}
+
+	h1{
+		 font-size: 1.3em;
+	}
+	h2{
+		 font-size: 1.25em;
+	}
+	h3{
+		 font-size: 1.18em;
+	}
+	h4{
+		 font-size: 1.14em;
+	}
+	h5, h6{
+		 font-size: 1.1em;
+	}
+	img{
+		display: block;
+		max-width: 100%;
+		height: auto;
+	}
+	ul, ol{
+		margin-bottom: 2rem;
+	}
+	ol{
+		list-style: decimal;
+		list-style-position: inside;
+	}
+	table{
+		width: 100%;
+		margin-bottom: 2rem;
+	}
+	a{
+		color: $blue;
+	}
+
+}
+
+.post__footer{
+	font-size: 1.2rem;
+	color: #828282;
+	line-height: 1;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include breakpoint($mobile-bp){
+		display: block;
+	}
+}
+
+.post__data{
+	display: flex;
+	align-items: center;
+}
+
+.post__data-item{
+	display: inline-block;
+	&:not(:last-child):after{
+		content: "";
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		margin: 0 1.5rem;
+		background-color: #C4C4C4;
+		border-radius: 50%;
+		position: relative;
+		top: -2px;
+	}
+
+	a{
+		font-size: inherit;
+		line-height: inherit;
+	}
+}
+
+.post__read{
+	font-size: 1.4rem;
+	color: #107EFF;
+
+	@include breakpoint($mobile-bp){
+		display: block;
+		margin-top: 1.3rem;
+	}
+}
+
+.post__actions{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 1.1rem;
+	color: $white;
+
+	a{
+		color: inherit;
+		opacity: 0.6;
+		transition: opacity 0.2s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}

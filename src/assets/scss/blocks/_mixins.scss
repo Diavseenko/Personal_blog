@@ -1,0 +1,19 @@
+@mixin btn($col, $br, $ptb, $ptr){
+	background-color: $col;
+	box-shadow: 0 7px 17px -10px rgba($col, 0.2);
+	border-radius: $br;
+	padding: $ptb $ptr;
+
+	&:hover,
+	&:focus{
+		background-color: darken($col, 5%);
+		}
+}
+
+/*Media*/
+@mixin breakpoint($br){
+	@media (max-width: $br){
+		@content;
+	}
+
+}
